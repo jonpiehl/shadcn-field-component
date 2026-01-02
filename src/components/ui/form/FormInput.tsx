@@ -1,14 +1,14 @@
-import { Textarea } from "../ui/textarea"
+import { Input } from "../input"
 import { FormBase, FormControlProps } from "./FormBase"
 import { useFieldContext } from "./hooks"
 
-export function FormTextarea(props: FormControlProps) {
+export function FormInput(props: FormControlProps) {
   const field = useFieldContext<string>()
   const isInvalid = field.state.meta.isTouched && !field.state.meta.isValid
 
   return (
     <FormBase {...props}>
-      <Textarea
+      <Input
         id={field.name}
         name={field.name}
         value={field.state.value}

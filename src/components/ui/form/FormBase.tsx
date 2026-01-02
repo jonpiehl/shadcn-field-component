@@ -6,7 +6,7 @@ import {
   FieldDescription,
   FieldError,
   FieldLabel,
-} from "../ui/field"
+} from "../field"
 
 export type FormControlProps = {
   label: string
