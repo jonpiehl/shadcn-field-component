@@ -11,6 +11,8 @@ import {
 export type FormControlProps = {
   label: string
   description?: string
+  type?: string
+  placeholder?: string
 }
 
 type FormBaseProps = FormControlProps & {

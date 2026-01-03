@@ -23,7 +23,7 @@ import { PROJECT_STATUSES, projectSchema } from "@/schemas/project"
 import { XIcon } from "lucide-react"
 import { toast } from "sonner"
 import { z } from "zod"
-import { useAppForm } from "@/components/form/hooks"
+import { useAppForm } from "@/components/ui/form/hooks"
 
 type FormData = z.infer<typeof projectSchema>
 
@@ -68,7 +68,7 @@ export default function HomePage() {
       >
         <FieldGroup>
           <form.AppField name="name">
-            {field => <field.Input label="Name" />}
+            {field => <field.Input label="Name" placeholder="Enter your name" />}
           </form.AppField>
 
           <form.AppField name="status">

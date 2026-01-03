@@ -11,6 +11,8 @@ export function FormInput(props: FormControlProps) {
       <Input
         id={field.name}
         name={field.name}
+        type={props.type}
+        placeholder={props.placeholder}
         value={field.state.value}
         onBlur={field.handleBlur}
         onChange={e => field.handleChange(e.target.value)}
